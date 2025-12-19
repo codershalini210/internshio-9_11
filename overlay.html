@@ -78,6 +78,37 @@
             height:70px;
             aspect-ratio: 2/1.5;
         }
+        .item
+        {
+            height:250px;
+            width:250px;
+            background-color: black;
+            background-image: url(images/logo.png);
+            background-size: cover;
+            position: relative;
+            
+        }
+        .item-overlay
+        {
+             position: absolute;
+            top: 0px;
+            left:0px;
+           
+            visibility: hidden;
+            height:250px;
+            width:250px;
+            background-color: rgba(128, 128, 128, 0.868);
+            text-align: center;
+            font-size: 45px;
+            color: white;
+        }
+        .item:hover .item-overlay
+        {
+            visibility: visible;
+             color: white;
+        }
+        /* ="item">
+        <div class="item-overlay" */
     </style>
 </head>
 <body>
@@ -96,11 +127,40 @@
     </div>
     <div class="header">  
         <div class="overlay">
-            <div class="content">
+            <div class="content" >
                 <div>Lorem ipsum</div>
                 <p>Lorem ipsum dolor sit amet consectetu</p>
         </div>
     </div>
-    
+    <div style="display: flex;justify-content: space-between;
+    align-items: center; width: 100%;
+    height:400px;">
+    <div class="item">
+        thhis is from item div
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti doloremque laboriosam nostrum mollitia adipisci, labore incidunt, possimus, modi nesciunt autem ullam repudiandae reiciendis? Veritatis omnis officia cupiditate porro blanditiis fuga?
+        <div class="item-overlay">
+            hello world
+        </div>
+
+    </div>
+   <div class="item">
+        <div class="item-overlay">
+            hello world
+        </div>
+
+    </div>
+  <div class="item">
+        <div class="item-overlay">
+            hello world
+        </div>
+
+    </div>
+    <div class="item">
+        <div class="item-overlay">
+            hello world
+        </div>
+
+    </div>
+    </div>
 </body>
 </html>

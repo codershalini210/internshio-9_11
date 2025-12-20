@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box
+        {
+            height: 100px;
+            width:100px;
+            background: orange;
+        }
+        .box:hover{
+            height:200px;
+            width:200px;
+            background-color: yellow;
+            transition-property: all;
+            transition-duration: 3s;
+        }
+        .card
+        {
+            height: 200px;
+            width: 200px;
+            background-image: url(images/seo.jfif);
+            background-size:120% 120%;
+            background-position: center;
+        }
+         .cardoverlay
+        {
+            height:100%;
+            width:100%;
+            color:white;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.544);
+            visibility: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+        }
+        .card:hover{
+            background-size: 100% 100%;
+            transition: all 500ms; 
+        }
+        .card:hover .cardoverlay{
+            background-size: 100% 100%;
+            transition: all 500ms; 
+            visibility: visible;
+            
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="card">
+            <div class="cardoverlay" >
+                <!-- <img src="images/seo.jfif" alt=""> -->
+                <div style="font-size:15px">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Lorem ipsum dolor sit amet
+                    Lorem ipsum dolor sit amet  
+                </div>
+                 <div style="background-color:rgba(19, 19, 106, 0.782); font-size:30px;">
+                    SEO
+                </div>
+            </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ball
+        {
+            height:75px;
+            width:75px;            
+            border-radius: 100%;
+            background: radial-gradient(circle farthest-corner at 37.5px 10px,rgb(223, 244, 208),rgb(39, 248, 133) 50%);
+            animation:ballanimation 2s infinite linear;
+        }
+        @keyframes ballanimation {
+            0%{margin-top:0px;}
+            50%{margin-top:300px;}
+            100%{margin-top: 0px;}
+        }
+    </style>
+</head>
+<body>
+    <div class="ball"></div>
+</body>
+</html>
